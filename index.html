@@ -3,45 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <title>Football AI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     body {
       margin: 0;
-      padding: 0;
       font-family: Arial, sans-serif;
       background: linear-gradient(135deg, #020617, #0f172a);
       color: white;
       text-align: center;
     }
 
-    .container {
-      padding: 100px 20px;
+    header {
+      padding: 120px 20px;
     }
 
     h1 {
-      font-size: 52px;
-      margin-bottom: 10px;
+      font-size: 56px;
+      margin-bottom: 15px;
     }
 
     p {
       font-size: 20px;
-      max-width: 700px;
-      margin: 0 auto 40px auto;
-      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto 40px;
       opacity: 0.9;
+      line-height: 1.6;
     }
 
     .btn {
       display: inline-block;
-      padding: 18px 45px;
+      padding: 20px 50px;
       font-size: 22px;
       font-weight: bold;
       color: white;
       background: #22c55e;
-      border-radius: 12px;
+      border-radius: 14px;
       text-decoration: none;
-      transition: 0.3s ease;
-      box-shadow: 0 10px 25px rgba(34,197,94,0.4);
+      transition: 0.3s;
+      box-shadow: 0 12px 30px rgba(34,197,94,0.4);
     }
 
     .btn:hover {
@@ -49,19 +49,29 @@
       transform: scale(1.08);
     }
 
+    section {
+      padding: 90px 20px;
+    }
+
+    h2 {
+      font-size: 36px;
+      margin-bottom: 50px;
+    }
+
     .features {
-      margin-top: 80px;
       display: flex;
       justify-content: center;
       gap: 30px;
       flex-wrap: wrap;
+      max-width: 1200px;
+      margin: auto;
     }
 
     .card {
-      background: rgba(255,255,255,0.05);
-      padding: 25px;
+      background: rgba(255,255,255,0.06);
       width: 260px;
-      border-radius: 15px;
+      padding: 25px;
+      border-radius: 18px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.3);
     }
 
@@ -70,8 +80,7 @@
     }
 
     footer {
-      margin-top: 100px;
-      padding-bottom: 30px;
+      padding: 40px;
       font-size: 14px;
       opacity: 0.7;
     }
@@ -80,50 +89,53 @@
 
 <body>
 
-  <div class="container">
+  <!-- HERO -->
+  <header>
     <h1>⚽ Football AI</h1>
-
     <p>
       Advanced football analysis powered by AI.  
       Detect goals, generate heatmaps, track players, and create automatic highlights.
     </p>
 
-    <!-- BUTTON TO RENDER WEBSITE -->
     <a
       class="btn"
-      href="https://football-ai-10zi.onrender.com"
+      href="https://render-ai-analize.onrender.com"
       target="_blank"
     >
       🚀 Open Live AI App
     </a>
+  </header>
+
+  <!-- FEATURES -->
+  <section>
+    <h2>🔥 Features</h2>
 
     <div class="features">
       <div class="card">
         <h3>🎯 Goal Detection</h3>
-        <p>Detect shots, goals and key actions automatically.</p>
+        <p>Detect shots and goals automatically using AI models.</p>
       </div>
 
       <div class="card">
         <h3>🔥 Heatmaps</h3>
-        <p>Visualize player movement and positioning.</p>
+        <p>Visualize player movement and positioning on the pitch.</p>
       </div>
 
       <div class="card">
         <h3>🎥 Highlights</h3>
-        <p>Generate match highlights automatically.</p>
+        <p>Generate match highlights without manual editing.</p>
       </div>
 
       <div class="card">
         <h3>📊 Tracking</h3>
-        <p>AI-powered player and ball tracking.</p>
+        <p>Player and ball tracking powered by computer vision.</p>
       </div>
     </div>
-  </div>
+  </section>
 
+  <!-- FOOTER -->
   <footer>
-    <p>
-      Built by Houdhayfa • Powered by FastAPI, OpenCV & AI
-    </p>
+    Built by Houdhayfa • FastAPI • OpenCV • YOLO • AI
   </footer>
 
 </body>
